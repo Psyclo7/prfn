@@ -40,7 +40,7 @@ int main() {
             cout << "Opcion no valida. Intente de nuevo.\n";
         }
 
-    } while (opcionmenu < 1 || opcionmenu > 5); //OPERADOR SI UNO DE LOS 2 ES VERDADERO SE EJECUTA
+    } while (opcionmenu != 5); //OPERADOR SI EL MENU NO SE TERMINA CON LA OPCION 5 DESPUES DE EJECUTA NUEVAMENTE
 
     return 0;
 }
