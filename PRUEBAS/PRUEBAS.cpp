@@ -31,7 +31,7 @@ int main() {
                 case 3: 
                     cout << "poner proceso popcion3"; break;
                 case 4:
-                    cout << "porbner proceso 4";break;
+                    cout << "opcion4" << endl; break;
                 case 5:
                     cout << "Hasta luego, pasa un lindo dia";break;
             }
