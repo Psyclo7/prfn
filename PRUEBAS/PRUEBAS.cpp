@@ -2,6 +2,7 @@
 #include <string>
 #include "validarentradas.h"
 #include "opcion1.h"
+#include "opcion2.h"
 using namespace std;
 int main() {
     int opcionmenu;
@@ -25,7 +26,8 @@ int main() {
                     opcion1();
                     break;
                 case 2:
-                    cout << "poner la iopcion 2"; break;
+                    opcion2()
+                        ; break;
                 case 3: 
                     cout << "poner proceso popcion3"; break;
                 case 4:
