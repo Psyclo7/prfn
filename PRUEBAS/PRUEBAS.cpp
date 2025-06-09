@@ -3,6 +3,7 @@
 #include "validarentradas.h"
 #include "opcion1.h"
 #include "opcion2.h"
+#include "opcion3.h"
 using namespace std;
 int main() {
     int opcionmenu;
@@ -27,10 +28,11 @@ int main() {
                     opcion1();
                     break;
                 case 2:
-                    opcion2()
-                        ; break;
+                    opcion2(); 
+                    break;
                 case 3: 
-                    cout << "poner proceso popcion3"; break;
+                    opcion3();
+                    break;
                 case 4:
                     cout << "opcion4" << endl; break;
                 case 5:
