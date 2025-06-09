@@ -16,7 +16,7 @@ int main() {
         cout << "3- analizar datos turisticos\n";
         cout << "4- mostrar historial de reservas\n";
         cout << "5- salir del menu\n";
-        cout << "numero de actividadd:";
+        cout << "numero de actividad:";
         validar(opcionmenu);
         // estructura para repetir menu 
         if (opcionmenu >= 1 && opcionmenu <= 5) {
