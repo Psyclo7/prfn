@@ -123,12 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Calculo.cpp" />
     <ClCompile Include="PRUEBAS.cpp" />
     <ClCompile Include="opcion1.cpp" />
     <ClCompile Include="opcion2.cpp" />
     <ClCompile Include="validarentradas.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Calculo.h" />
     <ClInclude Include="opcion2.h" />
     <ClInclude Include="opcion1.h" />
     <ClInclude Include="validarentradas.h" />

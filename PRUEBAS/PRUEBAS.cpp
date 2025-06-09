@@ -7,22 +7,23 @@ using namespace std;
 int main() {
     int opcionmenu;
 
-    do {
-        // MOSTRAR EL MENU DE OPCIONES TURISTUCAS
-        cout << "\n****** MENU DE OPCIONES ******\n";
-        cout << "Selecciona la actividad que desea realizar\n";
-        cout << "1- Calcular costo del tour\n";
-        cout << "2- Gestionar reserva de actividad\n";
-        cout << "3- Analizar datos turisticos\n";
-        cout << "4- Mostrar historial de reservas\n";
-        cout << "5- Salir del menu\n";
-        cout << "Numero de actividad:";
+    do {  
+        // mostrar el menu de opciones turistucas
+        cout << "\n****** menu de opciones ******\n";
+        cout << "selecciona la actividad que desea realizar\n";
+        cout << "1- calcular costo del tour\n";
+        cout << "2- gestionar reserva de actividad\n";
+        cout << "3- analizar datos turisticos\n";
+        cout << "4- mostrar historial de reservas\n";
+        cout << "5- salir del menu\n";
+        cout << "numero de actividad:";
         validar(opcionmenu);
-        // ESTRUCTURA PARA REPETIR MENU
+        // estructura para repetir menu 
         if (opcionmenu >= 1 && opcionmenu <= 5) {
-            //ESTRUCTURA PARA EJECUTAR CADA ACTIVIDAD
+            //estructura para ejecutar cada actividad
             switch (opcionmenu) {
                 case 1:
+                    system("cls");  
                     opcion1();
                     break;
                 case 2:
@@ -33,14 +34,15 @@ int main() {
                 case 4:
                     cout << "opcion4" << endl; break;
                 case 5:
-                    cout << "Hasta luego, pasa un lindo dia";break;
+                    cout << "hasta luego, pasa un lindo dia";break;
             }
         }
         else {
-            cout << "Opcion no valida. Intente de nuevo.\n";
+            cout << "opcion no valida. intente de nuevo.\n";
+
         }
 
-    } while (opcionmenu != 5); //OPERADOR SI EL MENU NO SE TERMINA CON LA OPCION 5 DESPUES DE EJECUTA NUEVAMENTE
+    } while (opcionmenu != 5); //operador si el menu no se termina con la opcion 5 despues de ejecuta nuevamente
 
     return 0;
 }
