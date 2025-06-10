@@ -4,6 +4,7 @@
 #include "opcion1.h"
 #include "opcion2.h"
 #include "opcion3.h"
+#include "opcion4.h"
 using namespace std;
 int main() {
     int opcionmenu;
@@ -36,7 +37,9 @@ int main() {
                     opcion3();
                     break;
                 case 4:
-                    cout << "opcion4" << endl; break;
+                    system("cls");
+                    opcion4();
+                    break;
                 case 5:
                     cout << "hasta luego, pasa un lindo dia";break;
             }

@@ -1,6 +1,14 @@
-#ifndef opcion1_h
-#define opcion1_h
-//SOLO ES LA FIRMA DE LA FUNCION OPCION1
-void opcion4();
+#ifndef opcion4_h
+#define opcion4_h
+// Estructura para guardar una reserva
+struct Reserva {
+    int isla;
+    int actividad;
+    int dia;
+    int numeroPersonas;
+};
 
+// Funciones públicas
+void registrarReserva(int isla, int actividad, int dia, int numeroPersonas);
+void opcion4();
 #endif
