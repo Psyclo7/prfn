@@ -12,13 +12,13 @@ int main() {
     do {  
         // mostrar el menu de opciones turistucas
         cout << "\n****** menu de opciones ******\n";
-        cout << "selecciona la actividad que desea realizar\n";
-        cout << "1- calcular costo del tour\n";
-        cout << "2- gestionar reserva de actividad\n";
-        cout << "3- analizar datos turisticos\n";
-        cout << "4- mostrar historial de reservas\n";
-        cout << "5- salir del menu\n";
-        cout << "numero de actividadd:";
+        cout << "Selecciona la actividad que desea realizar\n";
+        cout << "1- Calcular costo del tour\n";
+        cout << "2- Gestionar reserva de actividad\n";
+        cout << "3- Analizar datos turisticos\n";
+        cout << "4- Mostrar historial de reservas\n";
+        cout << "5- Salir del menu\n";
+        cout << "Numero de actividad:";
         validar(opcionmenu);
         // estructura para repetir menu 
         if (opcionmenu >= 1 && opcionmenu <= 5) {
@@ -41,11 +41,11 @@ int main() {
                     opcion4();
                     break;
                 case 5:
-                    cout << "hasta luego, pasa un lindo dia";break;
+                    cout << "Hasta luego, gracias por utilizar nuestro menu";break;
             }
         }
         else {
-            cout << "opcion no valida. intente de nuevo.\n";
+            cout << "Opcion no valida. intente de nuevo.\n";
 
         }
 
