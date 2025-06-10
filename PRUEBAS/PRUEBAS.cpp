@@ -28,9 +28,11 @@ int main() {
                     opcion1();
                     break;
                 case 2:
+                    system("cls");
                     opcion2(); 
                     break;
                 case 3: 
+                    system("cls");
                     opcion3();
                     break;
                 case 4:

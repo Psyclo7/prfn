@@ -1,5 +1,4 @@
 #include <iostream>
-#include "validarentradas.h"
 using namespace std;
 
 int opcion2() {
@@ -18,7 +17,7 @@ int opcion2() {
         cout << "2. Isla Santa Cruz" << endl;
         cout << "3. Isla Isabela" << endl;
         cout << "Seleccione una isla: ";
-        validar(opcion);
+        cin >> opcion;
 
         if (opcion < 1 || opcion > 3) {
             cout << "Isla no válida. Intente de nuevo.\n";
@@ -43,7 +42,7 @@ int opcion2() {
             cout << "2. Buceo" << endl;
             cout << "3. Caminata" << endl;
             cout << "4. Observacion de aves" << endl;
-            validar(actividad);
+            cin >> actividad;
             if (actividad < 1 || actividad > 4) {
                 cout << "Actividad no válida. Intente de nuevo.\n";
                 continue;
@@ -58,14 +57,14 @@ int opcion2() {
         cout << "5.Viernes" << endl;
         cout << "6.Sabado" << endl;
         cout << "7.Domingo" << endl;
-        validar(dia);
+        cin >> dia;
         if (dia < 1 || dia > 7) {
             cout << "Día no válido. Intente de nuevo.\n";
             continue;
         }
 
         cout << "\nCantidad de personas que desea ingresar: ";
-        validar(personas);
+        cin >> personas;
 
         bool reservaExitosa = false;
 

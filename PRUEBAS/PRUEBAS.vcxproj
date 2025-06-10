@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="Calculo.cpp" />
     <ClCompile Include="opcion3.cpp" />
+    <ClCompile Include="opcion4.cpp" />
     <ClCompile Include="PRUEBAS.cpp" />
     <ClCompile Include="opcion1.cpp" />
     <ClCompile Include="opcion2.cpp" />
@@ -135,6 +136,7 @@
     <ClInclude Include="opcion2.h" />
     <ClInclude Include="opcion1.h" />
     <ClInclude Include="opcion3.h" />
+    <ClInclude Include="opcion4.h" />
     <ClInclude Include="validarentradas.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
