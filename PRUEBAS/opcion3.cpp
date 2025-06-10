@@ -10,6 +10,7 @@ void opcion3() {
     double promedios[3];
     int maximos[3];
     int minimos[3];
+
     // Ingresar los datos
     for (int i = 0; i < 3; i++) {
         cout << "Ingrese los visitantes por dia para " << sitiosTuristicos[i] << ":\n";

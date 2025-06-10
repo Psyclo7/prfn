@@ -136,6 +136,7 @@
     <ClInclude Include="opcion2.h" />
     <ClInclude Include="opcion1.h" />
     <ClInclude Include="opcion3.h" />
+    <ClInclude Include="opcion4.h" />
     <ClInclude Include="validarentradas.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
