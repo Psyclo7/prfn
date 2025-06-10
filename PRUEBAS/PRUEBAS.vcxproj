@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="Calculo.cpp" />
     <ClCompile Include="opcion3.cpp" />
+    <ClCompile Include="opcion4.cpp" />
     <ClCompile Include="PRUEBAS.cpp" />
     <ClCompile Include="opcion1.cpp" />
     <ClCompile Include="opcion2.cpp" />

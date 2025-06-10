@@ -5,18 +5,19 @@
 using namespace std;
 
 void opcion3() {
-    string sitiosTuristicos[3] = { "San Cristóbal", "Santa Cruz", "Isabela" };
+    string sitiosTuristicos[3] = { "San Cristobal", "Santa Cruz", "Isabela" };
     int visitantes[3][7];
     double promedios[3];
     int maximos[3];
     int minimos[3];
-
     // Ingresar los datos
     for (int i = 0; i < 3; i++) {
-        cout << "Ingrese los visitantes por día para " << sitiosTuristicos[i] << ":\n";
+        cout << "Ingrese los visitantes por dia para " << sitiosTuristicos[i] << ":\n";
         int suma = 0;
         for (int j = 0; j < 7; j++) {
             validar(visitantes[i][j]);
+            if (visitantes[i][j] > 0 && visitantes[i][j] <= 1000)
+            {
             suma += visitantes[i][j];
 
             if (j == 0) {
@@ -28,7 +29,12 @@ void opcion3() {
                     maximos[i] = visitantes[i][j];
                 if (visitantes[i][j] < minimos[i])
                     minimos[i] = visitantes[i][j];
+                }
             }
+			else {
+				cout << "El numero de visitantes debe ser mayor a 0 y menor a 1000. Intente de nuevo." << endl;
+				j--; // Repetir la iteración para el mismo día
+			}
         }
         promedios[i] = suma / 7.0;
     }
@@ -36,8 +42,8 @@ void opcion3() {
     // Mostrar estadísticas
     for (int i = 0; i < 3; i++) {
         cout << sitiosTuristicos[i] << ": Promedio = " << promedios[i]
-            << ", Máximo = " << maximos[i]
-            << ", Mínimo = " << minimos[i] << endl;
+            << ", Maximo = " << maximos[i]
+            << ", Minimo = " << minimos[i] << endl;
     }
 
     // Encontrar isla con menor promedio
@@ -48,6 +54,6 @@ void opcion3() {
         }
     }
 
-    cout << "\nRecomendación: Visite " << sitiosTuristicos[menorPromedio]
+    cout << "\nRecomendacion: Visite " << sitiosTuristicos[menorPromedio]
         << ", es la isla con menor afluencia en promedio." << endl;
 }
